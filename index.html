@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ज्ञान निकेतन | तिसिऔता वैशाली</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f5f5f5;
+    line-height:1.7;
+}
+header{
+    background:#2c3e50;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+}
+nav{
+    background:#34495e;
+    text-align:center;
+    padding:10px;
+}
+nav a{
+    color:#fff;
+    margin:0 12px;
+    text-decoration:none;
+    font-weight:bold;
+}
+section{
+    padding:20px;
+    max-width:1100px;
+    margin:auto;
+}
+.box{
+    background:#fff;
+    padding:15px;
+    margin-bottom:20px;
+    border-radius:6px;
+    box-shadow:0 0 6px #ccc;
+}
+h2,h3{
+    color:#2c3e50;
+}
+footer{
+    background:#2c3e50;
+    color:#fff;
+    text-align:center;
+    padding:15px;
+}
+
+/* Gallery */
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:12px;
+}
+.gallery-grid img{
+    width:100%;
+    height:160px;
+    object-fit:cover;
+    border-radius:6px;
+    box-shadow:0 0 4px #aaa;
+}
+
+/* WhatsApp Button */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25d366;
+    color:#fff;
+    padding:12px 18px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* Form */
+input, textarea, button{
+    width:100%;
+    padding:10px;
+    margin-top:8px;
+}
+button{
+    background:#2c3e50;
+    color:#fff;
+    border:none;
+}
+
+/* Mobile */
+@media(max-width:600px){
+    nav a{
+        display:block;
+        margin:8px 0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>ज्ञान निकेतन विद्यालय</h1>
+<p>तिसिऔता, वैशाली, बिहार – 844126</p>
+<p>स्थापना : 15 जून 1999 | U-DISE : 10180803305</p>
+</header>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#notice">Notice</a>
+<a href="#admission">Admission</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+<div class="box">
+<h2>स्वागत है</h2>
+<p><b>भविष्य की उड़ान</b></p>
+<p>The Path of Success Begins at Gyan Niketan Tisiauta Vaishali</p>
+</div>
+</section>
+
+<section id="notice">
+<div class="box">
+<h2>📢 Notice Board</h2>
+<p>📅 दिनांक: 09-01-2026</p>
+<p><b>नर्सरी से कक्षा 8 तक नामांकन चालू</b></p>
+<p>2 महीने निःशुल्क पढ़ाई</p>
+</div>
+</section>
+
+<section id="admission">
+<div class="box">
+<h2>📝 Online Admission (WhatsApp)</h2>
+<form onsubmit="sendWhatsApp(); return false;">
+<label>बच्चे का नाम</label>
+<input type="text" id="name" required>
+
+<label>कक्षा</label>
+<input type="text" id="class">
+
+<label>अभिभावक का नाम</label>
+<input type="text" id="parent">
+
+<label>मोबाइल नंबर</label>
+<input type="tel" id="mobile" required>
+
+<label>संदेश</label>
+<textarea id="message"></textarea>
+
+<button type="submit">WhatsApp से भेजें</button>
+</form>
+</div>
+</section>
+
+<section id="gallery">
+<div class="box">
+<h2>📸 Photo Gallery</h2>
+
+<h3>🏫 School</h3>
+<div class="gallery-grid">
+<img src="img/school/s1.jpg">
+<img src="img/school/s2.jpg">
+<img src="img/school/s3.jpg">
+<img src="img/school/s4.jpg">
+<img src="img/school/s5.jpg">
+<img src="img/school/s6.jpg">
+<img src="img/school/s7.jpg">
+<img src="img/school/s8.jpg">
+<img src="img/school/s9.jpg">
+</div>
+
+<h3>🏫 Classroom</h3>
+<div class="gallery-grid">
+<img src="img/classroom/c1.jpg">
+<img src="img/classroom/c2.jpg">
+<img src="img/classroom/c3.jpg">
+<img src="img/classroom/c4.jpg">
+</div>
+
+<h3>🏃 Playground</h3>
+<div class="gallery-grid">
+<img src="img/playground/p1.jpg">
+<img src="img/playground/p2.jpg">
+<img src="img/playground/p3.jpg">
+<img src="img/playground/p4.jpg">
+<img src="img/playground/p5.jpg">
+<img src="img/playground/p6.jpg">
+<img src="img/playground/p7.jpg">
+<img src="img/playground/p8.jpg">
+</div>
+
+</div>
+</section>
+
+<section id="contact">
+<div class="box">
+<h2>📍 Contact & Location</h2>
+<p><b>पता:</b> तिसिऔता चौक, ATM के पास, वैशाली (बिहार)</p>
+<p><b>मोबाइल:</b> 6200072521, 9934992622</p>
+
+<iframe
+src="https://maps.google.com/maps?q=Gyan%20Niketan%20Tisiauta%20Vaishali%20Bihar&amp;ll=26.021647,85.435169&amp;z=17&amp;output=embed"
+width="100%"
+height="250"
+style="border:0;"
+allowfullscreen=""
+loading="lazy">
+</iframe>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 ज्ञान निकेतन विद्यालय | सभी अधिकार सुरक्षित</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/916200072521" target="_blank">💬 WhatsApp</a>
+
+<script>
+function sendWhatsApp(){
+var url = "https://wa.me/916200072521";
+window.open(url,'_blank');
+}
+</script>
+
+</body>
+</html>
